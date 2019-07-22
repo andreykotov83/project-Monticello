@@ -1,0 +1,106 @@
+.header {
+    max-width: 100%;
+    height: 130px;
+    // position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.scro {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.nav {
+    padding: 51px 15px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    &__logo {
+        flex-grow: 1;
+        svg {
+            fill: white;
+            width: 241px;
+            height: 54px;
+        }
+    }
+    &__list {
+        flex-grow: 2;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item:not(:last-child) {
+        padding-right: 20px;
+    }
+    &__link {
+        letter-spacing: 0.03em;
+        color: white;
+        font-family: gothamBook;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+    &__link::before {
+        content: "";
+        height: 10px;
+        width: 10px;
+        border: 1px solid;
+        border-radius: 50%;
+        margin-right: 10px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+    &__link.activ,
+    &__link:hover {
+        color: rgba(255, 255, 255, 0.6);
+        // transition: 0.3s;
+        &::before {
+            background-color: white;
+            // transition: 0.3s;
+        }
+    }
+}
+
+.nav-social {
+    flex-grow: 1;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    & .icon-link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    &__item+&__item {
+        margin-left: 20px;
+    }
+    &__svg {
+        fill: rgba(255, 255, 255, 1);
+        height: 17px;
+        width: 17px;
+        transition: 0.5s;
+    }
+    & .icon-link:hover {
+        border-color: rgba(255, 255, 255, 1);
+        // transition: 0.3s;
+        svg {
+            fill: rgba(255, 255, 255, 0.4);
+            // transition: 0.3s;
+        }
+    }
+}

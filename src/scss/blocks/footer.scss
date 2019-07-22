@@ -1,0 +1,71 @@
+    .footer {
+        min-height: 525px;
+        background-image: url(../img/gallery-1.png);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        &.footer::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            background-color: white;
+            background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+            opacity: 0.97;
+        }
+        &__nav {
+            padding-top: 200px;
+        }
+        &__logo {
+            flex-grow: 2;
+            text-align: center;
+            padding-left: 15px;
+            align-items: center;
+            svg {
+                fill: white;
+                width: 241px;
+                height: 54px;
+            }
+        }
+        .nav-social--footer {
+            flex-grow: 2;
+            justify-content: center;
+            align-items: center;
+            padding-right: 15px;
+        }
+        &__copyright {
+            padding-left: 206px;
+            padding-top: 34px;
+        }
+        small,
+        time {
+            color: white;
+            font-family: "gothamBook";
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+        }
+        .copyright {
+            padding-right: 20px;
+            border: 1px solid;
+            border-color: white;
+            border-width: 0 2px 0 0;
+        }
+        .small-icon {
+            margin-left: 18px;
+        }
+        .fa-heart {
+            color: white;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 400;
+            margin-left: 5px;
+            margin-right: 4px;
+        }
+    }

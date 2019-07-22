@@ -1,0 +1,59 @@
+include ./include/header-title
+doctype html
+html
+    head
+        meta(name="viewport" content="width=device-width,   initial-scale=1   shrink-to-fit=no")
+        meta(charset="utf-8")
+        title Monticello
+        link(rel="stylesheet" href="./swiper-4.5.0/dist/css/swiper.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet")
+        script(src="https://kit.fontawesome.com/30c582ccc5.js")
+        link(rel="stylesheet" type="text/css" media="screen" href="./fonts/stylesheet.css")
+        link(rel="stylesheet" type="text/css" media="screen" href="./css/normalize.css")
+        link(rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap-grid.css")
+        link(rel="stylesheet" type="text/css" media="screen" href="./css/style.css")
+    body
+        include include/icons
+        header.header.scro#main
+            .container
+                nav.nav.d-flex.align-items-center
+                    .nav__logo
+                        svg.logo
+                            use(xlink:href="#logo")
+                    ul.nav__list.d-flex
+                        li.nav__item 
+                            a(class="nav__link activ" href="#")#link1 about Us
+                        li.nav__item
+                            a(class="nav__link" href="#projects")#link2 projects
+                        li.nav__item
+                            a(class="nav__link" href="#news")#link3 news
+                        li.nav__item
+                            a(class="nav__link" href="#contact")#link4 contact
+                    ul.nav-social.d-flex
+                        li.nav-social__item
+                            a(class="nav__facebook icon-link" href="https://uk-ua.facebook.com/" title="linck facebook")
+                                svg.nav-social__svg
+                                    use(xlink:href="#facebook")
+                        li.nav-social__item
+                            a(class="nav__twitter icon-link" href="https://twitter.com/?lang=ru" title="linck twitter")
+                                svg.nav-social__svg
+                                    use(xlink:href="#twitter")
+                        li.nav-social__item
+                            a(class="nav__instagram icon-link" href="https://www.instagram.com/?hl=ru" title="linck instagram")
+                                svg.nav-social__svg
+                                    use(xlink:href="#instagram")
+        include include/slider
+        a(class="scrol" href="#footer")
+            svg.scrol__down
+                use(xlink:href="#back")
+        include include/section--main
+        include include/section--slider
+        include include/section--gallery
+        #map.map
+        section.contact
+            include include/contact
+        include include/footer
+        script(src="./js/jquery-3.4.1.min.js")
+        script(src="./swiper-4.5.0/dist/js/swiper.min.js")
+        script(src="./js/scripts.js")
+        script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDXUTMWWK4qZwIsU3AudvJ9UC48L9IdA8&callback=initMap")

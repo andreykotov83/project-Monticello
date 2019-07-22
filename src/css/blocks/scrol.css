@@ -1,0 +1,16 @@
+.scrol {
+  position: absolute;
+  display: block;
+  top: 85%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 85%);
+  -ms-transform: translate(-50%, -85%);
+  transform: translate(-50%, 85%);
+  z-index: 9; }
+  .scrol__down {
+    fill: white;
+    width: 40px;
+    height: 40px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }

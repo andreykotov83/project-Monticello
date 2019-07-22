@@ -1,0 +1,39 @@
+    .scrol {
+        position: absolute;
+        display: block;
+        top: 85%;
+        left: 50%;
+        -webkit-transform: translate(-50%, 85%);
+        -ms-transform: translate(-50%, -85%);
+        transform: translate(-50%, 85%);
+        z-index: 9;
+        &__down {
+            fill: white;
+            width: 40px;
+            height: 40px;
+            transform: rotate(-90deg);
+            transition: 0.5s;
+        }
+        &__down:hover {
+            fill: rgba(255, 255, 255, 0.4);
+            // transition: 0.7s;
+        }
+    }
+    
+    .scrol--top {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -85%);
+        &__top {
+            fill: rgba(255, 255, 255, 1);
+            width: 40px;
+            height: 40px;
+            transform: rotate(90deg);
+            transition: 0.5s;
+        }
+        &__top:hover {
+            fill: rgba(255, 255, 255, 0.4);
+            // transition: 0.5s;
+        }
+    }

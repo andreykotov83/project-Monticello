@@ -1,0 +1,29 @@
+footer.footer#footer
+    .container
+        .footer__nav.d-flex
+            .footer__logo
+                svg.logo
+                    use(xlink:href="#logo")
+            ul.nav-social.nav-social--footer.d-flex
+                        li.nav-social__item
+                            a(class="nav__facebook icon-link" href="https://uk-ua.facebook.com/" title="linck facebook")
+                                svg.nav-social__svg
+                                    use(xlink:href="#facebook")
+                        li.nav-social__item
+                            a(class="nav__twitter icon-link" href="https://twitter.com/?lang=ru" title="linck twitter")
+                                svg.nav-social__svg
+                                    use(xlink:href="#twitter")
+                        li.nav-social__item
+                            a(class="nav__instagram icon-link" href="https://www.instagram.com/?hl=ru" title="linck instagram")
+                                svg.nav-social__svg
+                                    use(xlink:href="#instagram")
+        .footer__copyright
+            small.copyright Copyright © 
+                time(datetime="2019-03-16") 2017 Monticello
+            small.small-icon Made with
+                i(class="fas fa-heart")
+                //- i(class="far fa-heart")
+                | by Ga Huy
+    a(class="scrol--top" href="#")
+        svg.scrol--top__top
+            use(xlink:href="#top")

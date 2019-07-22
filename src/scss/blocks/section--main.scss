@@ -1,0 +1,135 @@
+.section--main {
+    min-height: 1630px;
+    overflow: hidden;
+    &__title {
+        padding-top: 145px;
+        margin-bottom: 15px;
+        color: #2c4058;
+    }
+    &__img {
+        padding-top: 160px;
+        position: relative;
+    }
+    & .info__subtitle {
+        letter-spacing: -0.014em;
+        padding-top: 215px;
+        color: #2c4058;
+        font-family: gotham_mediumregular;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 300;
+    }
+}
+
+.title-line {
+    position: relative;
+}
+
+.title-line::before {
+    content: '';
+    position: absolute;
+    width: 105px;
+    top: -50px;
+    left: 50%;
+    height: 2px;
+    background-color: #4b4b4b;
+    transform: translate(-50%, 50%);
+}
+
+.info__title {
+    padding-top: 15px;
+    font-family: gotham_mediumregular;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.info__text {
+    padding-top: 38px;
+    letter-spacing: 0.004em;
+    color: #4b5562;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.btn {
+    color: #2c4058;
+    padding: 13px 39px;
+    border: 1px solid;
+    margin-top: 32px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: gotham_mediumregular;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: rgba(44, 64, 88, 0.8);
+    color: white;
+    box-shadow: 3px 7px 5px 0px rgba(0, 0, 0, 0.30);
+}
+
+.img-1 {
+    position: relative;
+    margin-right: 35px;
+}
+
+.img-1::before {
+    content: '';
+    position: absolute;
+    background-color: #55b7ff;
+    top: -70px;
+    left: -260px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.row-2 {
+    padding-top: 42px;
+}
+
+.img-2 {
+    position: relative;
+    margin-left: 40px;
+}
+
+.img-2::before {
+    content: '';
+    position: absolute;
+    background-color: #55b7ff;
+    top: -70px;
+    right: -260px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.section--main__preview {
+    padding-top: 53px;
+}
+
+.map-point {
+    margin-left: -4px;
+    height: 16px;
+    width: 16px;
+}
+
+.text-1,
+.text-2 {
+    letter-spacing: -0.03em;
+    margin-left: 4px;
+    color: #2c4058;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
